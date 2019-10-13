@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cod_asig: 1
+  cod_carr: 1
+  peso: 1
+
+two:
+  cod_asig: 1
+  cod_carr: 1
+  peso: 1

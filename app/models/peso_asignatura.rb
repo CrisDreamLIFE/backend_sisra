@@ -1,0 +1,2 @@
+class PesoAsignatura < ApplicationRecord
+end
