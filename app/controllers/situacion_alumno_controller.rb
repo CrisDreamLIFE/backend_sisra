@@ -13,5 +13,9 @@
       render :json => jsona
     end
 
+    def getCombinatoriaRamos(ramos)
+      len = ramos.length
+      for i in 1..len
+        
   end
 
