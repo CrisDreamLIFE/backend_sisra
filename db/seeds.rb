@@ -7,7 +7,9 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-PesoAsignatura.create(cod_asig:1563, cod_carr:1234, peso:4)
-PesoAsignatura.create(cod_asig:1564, cod_carr:1234, peso:3)
-PesoAsignatura.create(cod_asig:1565, cod_carr:1234, peso:2)
-PesoAsignatura.create(cod_asig:1566, cod_carr:1234, peso:2)
+
+PesoAsignatura.create(cod_asig:10101, cod_carr:1353, peso:2)
+PesoAsignatura.create(cod_asig:10102, cod_carr:1353, peso:2)
+PesoAsignatura.create(cod_asig:10103, cod_carr:1353, peso:1)
+PesoAsignatura.create(cod_asig:10104, cod_carr:1353, peso:2)
+PesoAsignatura.create(cod_asig:10125, cod_carr:1353, peso:1)
