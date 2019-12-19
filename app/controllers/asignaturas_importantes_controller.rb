@@ -76,7 +76,7 @@
       for i in (0..(nivelMax-1))
         aux = [mallaFiltrada[i].length-1]
         for j in (0..(mallaFiltrada[i].length-1))
-          pesoAux = 69
+          pesoAux = -1
           #obtengo el nombre y peso
           for k in (0..(asignaturasConCT.length-1))
             a =  mallaFiltrada[i][j]['ma_asign']
