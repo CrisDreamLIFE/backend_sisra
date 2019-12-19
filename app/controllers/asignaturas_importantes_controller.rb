@@ -15,7 +15,7 @@ class AsignaturasImportantesController < ApplicationController
 
       #Obtenemos la carrera del estudiante
       alumnoCarr = obj.obtenerCarreraConRut(rutAlu)
-      tCarr_cod = alumnoCarr[0]['car_ctip'].to_s 
+      tCarr_cod = alumnoCarr[0]['car_ctip'].to_s   
       espCarr_cod = alumnoCarr[0]['car_cesp'].to_s 
       puts alumnoCarr
 
@@ -76,15 +76,22 @@ class AsignaturasImportantesController < ApplicationController
       for i in (0..(nivelMax-1))
         aux = [mallaFiltrada[i].length-1]
         for j in (0..(mallaFiltrada[i].length-1))
-          #obtengo el nombre
+          pesoAux = -1
+          #obtengo el nombre y peso
           for k in (0..(asignaturasConCT.length-1))
             a =  mallaFiltrada[i][j]['ma_asign']
             b = asignaturasConCT[k][1]
             if(a == b)
               nombreAux =  asignaturasConCT[k][0]
+              peso = PesoAsignatura.where(cod_asig: asignaturasConCT[k][1], cod_carr: alumnoCarr[0]['car_cod'])
+              if(peso != [])
+                pesoAuxx = peso.as_json
+                pesoAux = pesoAuxx[0]['peso']
+                puts pesoAux
+              end
             end
           end
-          #obtengo el nombre
+          #obtengo las notas
           encontrado = 0
           for h in (0..(notasAlumno.length-1))
             a =  mallaFiltrada[i][j]['ma_asign']
@@ -101,7 +108,7 @@ class AsignaturasImportantesController < ApplicationController
             "nombreAsig" => nombreAux,
             "nivel" => mallaFiltrada[i][j]['ma_niv'],
             "situacion" => situacionAux,
-            "peso" => 0
+            "peso" => pesoAux    
             }
           mallaFinal[i] = aux
         end

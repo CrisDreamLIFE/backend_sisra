@@ -881,7 +881,7 @@ Migrating to CreatePesoAsignaturas (20191013023122)
   â†³ db/seeds.rb:13
 Started GET "/" for ::1 at 2019-10-19 20:54:54 -0300
   
-PG::ConnectionBad (FATAL:  no existe la base de datos «sisra_bd»
+PG::ConnectionBad (FATAL:  no existe la base de datos ï¿½sisra_bdï¿½
 ):
   
 pg-1.1.4-x64 (mingw32) lib/pg.rb:56:in `initialize'
