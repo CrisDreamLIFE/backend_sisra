@@ -1,4 +1,4 @@
-  class AsignaturasImportantesController < ApplicationController
+class AsignaturasImportantesController < ApplicationController
     require 'UtilidadSituacionAlumno'
 
     def index
