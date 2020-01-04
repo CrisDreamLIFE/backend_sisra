@@ -17,6 +17,15 @@
       alu_versionTodo = obj.obtenerVersionCarrera(rutAlu)
       alu_version = alu_versionTodo[0]['aca_ver_plan']
 
+      #indicadores del alumno
+      indicesAcademicos = obj.obtenerIndicadores(rutAlu)
+      ppa = indicesAcademicos[0]['aia_ppa']
+      ppa_sr = indicesAcademicos[0]['aia_ppa_sr']
+      ppa_car = indicesAcademicos[0]['aia_ppa_car']
+      nas =indicesAcademicos[0]['aia_nas']
+      nar = indicesAcademicos[0]['aia_nar']
+      nass = indicesAcademicos[0]['aia_nass']
+
       #Obtenemos la carrera del estudiante
       alumnoCarr = obj.obtenerCarreraConRut(rutAlu)
       tCarr_cod = alumnoCarr[0]['car_ctip'].to_s   
@@ -213,7 +222,13 @@
           "paternoAlu" => alu_paterno,
           "maternoAlu" => alu_materno,
           "tipoCarrera"=> tCarr_name,
-          "especialidadCarrera" => espCarr_name
+          "especialidadCarrera" => espCarr_name,
+          "ppa" => ppa,
+          "ppa_sr" => ppa_sr,
+          "ppa_car" => ppa_car,
+          "nas" => nas,
+          "nar" => nar,
+          "nass" => nass, 
         },
         malla: mallaFinal
       }
@@ -227,4 +242,5 @@
     end
 
   end
+  
 

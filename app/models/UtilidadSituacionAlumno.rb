@@ -24,6 +24,11 @@ class UtilidadSituacionAlumno
         @a_hash = JSON.parse(response.body) #hasheamos la respuesta para poder acceder
     end
 
+    def obtenerIndicadores(rut)
+        response = HTTParty.get('http://localhost:3000/alu_ia?aia_rut='+rut)
+        @a_hash = JSON.parse(response.body) #hasheamos la respuesta para poder acceder
+    end
+
     def obtenerTipoCarrera(cod)
         response = HTTParty.get('http://localhost:3000/tcarrera?tcr_ctip='+cod)
         @a_hash = JSON.parse(response.body) #hasheamos la respuesta para poder acceder
