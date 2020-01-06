@@ -13,6 +13,19 @@ class AsignaturasImportantesController < ApplicationController
       alu_paterno = alumno[0]['alu_paterno']
       alu_materno = alumno[0]['alu_materno']
 
+      #obtenermos version plan 
+      alu_versionTodo = obj.obtenerVersionCarrera(rutAlu)
+      alu_version = alu_versionTodo[0]['aca_ver_plan']
+
+      #indicadores del alumno
+      indicesAcademicos = obj.obtenerIndicadores(rutAlu)
+      ppa = indicesAcademicos[0]['aia_ppa']
+      ppa_sr = indicesAcademicos[0]['aia_ppa_sr']
+      ppa_car = indicesAcademicos[0]['aia_ppa_car']
+      nas =indicesAcademicos[0]['aia_nas']
+      nar = indicesAcademicos[0]['aia_nar']
+      nass = indicesAcademicos[0]['aia_nass']
+
       #Obtenemos la carrera del estudiante
       alumnoCarr = obj.obtenerCarreraConRut(rutAlu)
       tCarr_cod = alumnoCarr[0]['car_ctip'].to_s   
@@ -32,6 +45,49 @@ class AsignaturasImportantesController < ApplicationController
       asignaturasCodigo=[]
       asignaturasConCT=[]
       asignaturasSF = obj.obtenerTodasAsignaturas()
+      #filtro weas de mas:
+      lenAsig = asignaturasSF.length
+      puts "len asignaturasSinFiltrar = " + lenAsig.to_s
+      a = 0
+      while a < lenAsig
+        b = 0
+        while b < lenAsig
+          if !(asignaturasSF[a] == [] || asignaturasSF[b] == [] )
+            if(asignaturasSF[a]['asi_nom'].parameterize == asignaturasSF[b]['asi_nom'].parameterize && a != b && a == 10000)
+              puts "son iguales, comparando ver"
+              puts asignaturasSF[a]['asi_nom'].parameterize
+              puts asignaturasSF[b]['asi_nom'].parameterize
+              ver1 = obj.obtenerAsignaturaDeMalla(asignaturasSF[a]['asi_cod'].to_s)
+              ver2 = obj.obtenerAsignaturaDeMalla(asignaturasSF[b]['asi_cod'].to_s)
+              if(ver1 == [])
+                asignaturasSF[a] = []
+                break
+              end
+              if(ver2 == [])
+                asignaturasSF[b] = []
+                break
+              end
+              if(ver1[0]['ma_ver_plan'] > ver2[0]['ma_ver_plan'])
+                puts "mas grabde ver1"
+                asignaturasSF[b] = []
+              else
+                asignaturasSF[a] = []
+                puts "mas grabde ver2"
+                break
+              end
+            end
+          end
+          b=b+1
+        end
+        a=a+1
+      end
+      #se procede con quitatr las []
+      asignaturasSF.each_with_index do |element, index|
+        if(element==[])
+          asignaturasSF.delete(element)
+        end
+      end
+      puts "len asignaturasSinFiltrar despues de la wea = " + asignaturasSF.length.to_s
       #filtro de nombres:
       asignaturasSF.each_with_index do |element, index|
         aux = [2]
@@ -43,39 +99,86 @@ class AsignaturasImportantesController < ApplicationController
       
       #Obtener malla (asignaturas de la carrera)
       malla = obj.obtenerMallaConCarrera(alumnoCarr[0]['car_cod'].to_s)
-      l = malla.length - 1
-      puts  "el tamaño de la malla es:"
-      puts l 
-      array = []
-      nivelMax = malla[0]['ma_niv']
-      #filtrar malla
-      malla.each_with_index do |element, index|
-        #puts element['ma_asign'].to_s
-        if !(asignaturasCodigo.include?(element['ma_asign']))
-         # puts "1"
-          element['ma_asign'] = 0
+      #versionMallaDesc= obj.obtenerversionMalla(alumnoCarr[0]['car_cod'].to_s)
+      #versionMalla = versionMallaDesc[0]['ma_ver_plan']
+      mallaUltVer=[]
+      malla.each_with_index do |ele, index|
+        if(ele['ma_ver_plan'] == alu_version)
+          mallaUltVer.push(ele)
         end
       end
-      mallaFiltrada = [nivelMax]
-      for i in (0..(nivelMax-1))
-        mallaFiltrada[i] = []
+      l = mallaUltVer.length - 1   #malla sola
+      nivelMax = malla[0]['ma_niv']
+      #SECCION DE CODIGO DONDE SE DEJAN LAS ASIGNATURAS DEL PLAN MAS ACTUAL:
+      u = 4
+      mallaUltimoPlan = []
+      mallaUltVer.each_with_index do |element, index|  #malla sola
+        while u >= 1
+          puts "ma_ver_plann = " + element['ma_ver_plan'].to_s
+          puts "u = "+u.to_s
+          if(element['ma_ver_plan'] == u)
+            repetido = 0
+            mallaUltimoPlan.each_with_index do |key, index|
+              if ((key['ma_asign'] == element['ma_asign']))
+                repetido = 1
+                if(key['ma_ver_plan'] < element['ma_ver_plan'])
+                  puts ("elimine el viejo")
+                  puts "tamaño antes de eliminar de ultiplan = " + mallaUltimoPlan.length.to_s
+                  mallaUltimoPlan.delete(key)
+                  puts "tamaño despues de eliminar de ultiplan = " + mallaUltimoPlan.length.to_s
+                  mallaUltimoPlan.push(element)
+                  break
+                end
+              end
+            end
+            if(repetido == 0)
+              mallaUltimoPlan.push(element)
+            end
+          end
+          u = u - 1
+        end
+        u = 4
       end
-      puts mallaFiltrada
-      malla.each_with_index do |element, index|
+      puts "largo de malla ahora = " + mallaUltimoPlan.length.to_s
+      puts  "el tamaño de la malla es:"
+      puts l 
+      puts "malla"
+      puts mallaUltVer
+      array = []
+      
+      #filtrar malla
+      #mallaUltVer.each_with_index do |element, index|   #aqui iba malal solito, y lo cambie pa probar
+      #  puts element['ma_asign'].to_s
+      #  if !(asignaturasCodigo.include?(element['ma_asign']))
+      #    puts "1"
+     #     element['ma_asign'] = 0
+      #  end
+      #end
+      mallaFiltrada = []
+      i = 0
+      for i in (0..(nivelMax-1))
+        mallaFiltrada.push([])
+       # mallaFiltrada[i] = []
+      end
+      mallaUltVer.each_with_index do |element, index|   #malla sola
         if(element['ma_asign'] != 0)
           n = element['ma_niv']
+          puts "element = "
+          puts element
+          puts "nivel = " + n.to_s
           mallaFiltrada[n-1].push(element)
         end
       end
 
+      puts mallaFiltrada
       #Obtener calificaciones con rut
       notasAlumno = obj.obtenerCalificacionesConRut(rutAlu)
       
       #Armar hash de la malla (asignaturas, levels, peso y weas)
-      mallaFinal = [nivelMax]
+      mallaFinal = []  #[nivelMax]
       for i in (0..(nivelMax-1))
         aux = [mallaFiltrada[i].length-1]
-        for j in (0..(mallaFiltrada[i].length-1))
+        for j in (0..(mallaFiltrada[i].length-1))  # (0..(mallaFiltrada[i].length-1))
           pesoAux = -1
           #obtengo el nombre y peso
           for k in (0..(asignaturasConCT.length-1))
@@ -119,7 +222,13 @@ class AsignaturasImportantesController < ApplicationController
           "paternoAlu" => alu_paterno,
           "maternoAlu" => alu_materno,
           "tipoCarrera"=> tCarr_name,
-          "especialidadCarrera" => espCarr_name
+          "especialidadCarrera" => espCarr_name,
+          "ppa" => ppa,
+          "ppa_sr" => ppa_sr,
+          "ppa_car" => ppa_car,
+          "nas" => nas,
+          "nar" => nar,
+          "nass" => nass, 
         },
         malla: mallaFinal
       }
@@ -129,8 +238,9 @@ class AsignaturasImportantesController < ApplicationController
        # end
       #end
 
-      render :json => malla_hash
+      render :json => malla_hash    
     end
 
   end
+  
 
