@@ -1,2 +1,14 @@
 
 config/database.yml
+
+tmp/cache/bootsnap-compile-cache/19/02c4acadbfaa9b
+
+tmp/cache/bootsnap-compile-cache/1c/
+
+tmp/cache/bootsnap-compile-cache/2c/
+
+*.pid
+
+tmp/
+
+log/
