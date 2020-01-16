@@ -2,7 +2,10 @@
 
 
 
-##Cargar base de datos
-###rake db:setup
-##Cargar aplicación
-###rails server -p 3001
+## Cargar base de datos
+
+### rake db:setup
+
+## Cargar aplicación
+
+### rails server -p 3001
