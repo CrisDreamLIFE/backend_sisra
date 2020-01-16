@@ -9,10 +9,17 @@ class AsignaturasImportantesController < ApplicationController
       rutAlu = params[:rut]
       #Obtenemos datos personales del alumno y los guardamos en variables
       alumno = obj.obtenerAlumnoConRut(rutAlu)
+	if (alumno== [])
+		    render json: {
+      error: "No existe"
+    }, status: :not_found
+	
+
+	else
       alu_nombre = alumno[0]['alu_nombre']
       alu_paterno = alumno[0]['alu_paterno']
       alu_materno = alumno[0]['alu_materno']
-
+	
       #obtenermos version plan 
       alu_versionTodo = obj.obtenerVersionCarrera(rutAlu)
       alu_version = alu_versionTodo[0]['aca_ver_plan']
@@ -240,7 +247,7 @@ class AsignaturasImportantesController < ApplicationController
 
       render :json => malla_hash    
     end
-
+	end
   end
   
 
