@@ -10,7 +10,7 @@ class UtilidadSituacionAlumno
     end
 
     def obtenerCarreraConRut(rut)
-        response = HTTParty.get('http://localhost:3000/alu_Car?alu_rut='+rut)
+        response = HTTParty.get('http://localhost:3000/alu_Car?aca_rut='+rut)
         codigo = response[0]['aca_cod_car'].to_s 
         response2 = HTTParty.get('http://localhost:3000/carrera?car_cod='+codigo)
         @a_hash = JSON.parse(response2.body) #hasheamos la respuesta para poder acceder

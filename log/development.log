@@ -20864,3 +20864,509 @@ Processing by AsignaturasImportantesController#buscarAlumnoPorRut as HTML
 Completed 200 OK in 22522ms (Views: 1.6ms | ActiveRecord: 19.6ms)
 
 
+Started GET "/asignaturas_importantes/buscarAlumnoPorRut/19185415" for 127.0.0.1 at 2020-01-07 22:37:54 -0300
+  [1m[35m (57.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by AsignaturasImportantesController#buscarAlumnoPorRut as HTML
+  Parameters: {"rut"=>"19185415"}
+  [1m[36mPesoAsignatura Load (102.7ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10101], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10102], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10103], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10104], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10125], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10126], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.2ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10107], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10108], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10109], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10111], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.2ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10110], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.2ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10115], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10130], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.2ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10123], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.2ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10127], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.2ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10128], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13201], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10116], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.2ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13252], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10131], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13273], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.2ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13205], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.5ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13204], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10132], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13275], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.2ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13260], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13209], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13256], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13261], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.5ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13274], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.6ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10133], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13266], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13265], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13262], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13215], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13212], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13276], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.9ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13270], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13269], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13268], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.5ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13267], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13277], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+Completed 200 OK in 22876ms (Views: 1.9ms | ActiveRecord: 171.4ms)
+
+
+Started GET "/asignaturas_importantes/buscarAlumnoPorRut/19185415" for 127.0.0.1 at 2020-01-15 21:02:18 -0300
+  [1m[35m (35.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by AsignaturasImportantesController#buscarAlumnoPorRut as HTML
+  Parameters: {"rut"=>"19185415"}
+  [1m[36mPesoAsignatura Load (46.9ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10101], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10102], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.5ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10103], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.7ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10104], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10125], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10126], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.8ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10107], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10108], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.2ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10109], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10111], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10110], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10115], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10130], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10123], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (1.1ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10127], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10128], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13201], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.2ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10116], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.5ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13252], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10131], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13273], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13205], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13204], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10132], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13275], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13260], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.6ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13209], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13256], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13261], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.6ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13274], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10133], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13266], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.7ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13265], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13262], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13215], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13212], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13276], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13270], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.5ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13269], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13268], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13267], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13277], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+Completed 200 OK in 22826ms (Views: 1.6ms | ActiveRecord: 114.7ms)
+
+
+Started GET "/asignaturas_importantes/buscarAlumnoPorRut/19313751" for 127.0.0.1 at 2020-01-15 21:03:11 -0300
+Processing by AsignaturasImportantesController#buscarAlumnoPorRut as HTML
+  Parameters: {"rut"=>"19313751"}
+  [1m[36mPesoAsignatura Load (0.5ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10101], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10102], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.2ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10103], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.2ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10104], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10125], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.2ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10126], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10107], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (1.0ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10108], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10109], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.2ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10111], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.2ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10110], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.6ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10115], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10130], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10123], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.8ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10127], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10128], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13201], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10116], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13252], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10131], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13273], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13205], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13204], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10132], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13275], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13260], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13209], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13256], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13261], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13274], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10133], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.5ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13266], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13265], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13262], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13215], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13212], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13276], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13270], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.5ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13269], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13268], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13267], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.7ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13277], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+Completed 200 OK in 22328ms (Views: 1.8ms | ActiveRecord: 15.9ms)
+
+
+Started GET "/asignaturas_importantes/buscarAlumnoPorRut/19313751" for 127.0.0.1 at 2020-01-15 21:08:16 -0300
+Processing by AsignaturasImportantesController#buscarAlumnoPorRut as HTML
+  Parameters: {"rut"=>"19313751"}
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10101], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10102], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.2ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10103], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10104], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10125], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10126], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10107], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.7ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10108], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10109], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10111], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10110], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.6ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10115], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10130], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10123], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10127], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.5ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10128], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13201], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10116], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.7ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13252], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.5ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10131], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.2ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13273], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.2ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13205], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.5ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13204], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10132], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13275], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13260], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13209], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13256], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13261], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13274], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10133], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13266], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13265], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13262], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13215], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13212], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.6ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13276], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13270], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13269], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.6ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13268], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13267], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13277], ["cod_carr", 1353]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+Completed 200 OK in 22363ms (Views: 1.4ms | ActiveRecord: 18.5ms)
+
+
+Started GET "/asignaturas_importantes/buscarAlumnoPorRut/19313751" for 127.0.0.1 at 2020-01-15 21:10:43 -0300
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by AsignaturasImportantesController#buscarAlumnoPorRut as HTML
+  Parameters: {"rut"=>"19313751"}
+Completed 500 Internal Server Error in 19708ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/asignaturas_importantes_controller.rb:111:in `buscarAlumnoPorRut'
+Started GET "/asignaturas_importantes/buscarAlumnoPorRut/19313751" for 127.0.0.1 at 2020-01-15 21:14:27 -0300
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by AsignaturasImportantesController#buscarAlumnoPorRut as HTML
+  Parameters: {"rut"=>"19313751"}
+  [1m[36mPesoAsignatura Load (2.2ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10101], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10102], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.5ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10103], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10104], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10125], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10126], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.5ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10107], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10109], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10110], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10111], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10108], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10130], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.5ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13201], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10122], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10116], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.6ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10127], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10128], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13205], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.7ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13204], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10115], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10131], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13278], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10129], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10132], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13281], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13280], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.5ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13279], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.6ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13209], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.6ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13210], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.6ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 10133], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.7ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13215], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13214], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (1.0ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13213], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (1.0ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13212], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.6ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13282], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.8ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13220], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.6ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13219], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (1.2ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13284], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.6ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13217], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.7ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13283], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.6ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13225], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.6ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13224], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (1.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13223], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.6ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13222], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.8ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13221], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.9ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13230], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.7ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13229], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (1.2ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13228], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (1.5ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13227], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (1.5ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13226], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.8ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13235], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.7ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13234], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.9ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13233], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.8ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13232], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.5ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13231], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13285], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13239], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13238], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13237], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.3ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13236], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+  [1m[36mPesoAsignatura Load (0.4ms)[0m  [1m[34mSELECT "peso_asignaturas".* FROM "peso_asignaturas" WHERE "peso_asignaturas"."cod_asig" = $1 AND "peso_asignaturas"."cod_carr" = $2[0m  [["cod_asig", 13286], ["cod_carr", 1363]]
+  ↳ app/controllers/asignaturas_importantes_controller.rb:190
+Completed 200 OK in 22796ms (Views: 2.3ms | ActiveRecord: 45.4ms)
+
+
