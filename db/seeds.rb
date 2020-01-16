@@ -8,7 +8,7 @@
 
 
 
-PesoAsignatura.create(cod_asig:10107, cod_carr:1353, peso:1)
+PesoAsignatura.create(cod_asig:10107, cod_carr:1353, peso:4)
 PesoAsignatura.create(cod_asig:13273, cod_carr:1353, peso:1)
 PesoAsignatura.create(cod_asig:10111, cod_carr:1353, peso:0)
 PesoAsignatura.create(cod_asig:10125, cod_carr:1353, peso:1)
@@ -34,8 +34,8 @@ PesoAsignatura.create(cod_asig:10123, cod_carr:1353, peso:1)
 PesoAsignatura.create(cod_asig:10130, cod_carr:1353, peso:1)
 PesoAsignatura.create(cod_asig:10110, cod_carr:1353, peso:3)
 PesoAsignatura.create(cod_asig:10126, cod_carr:1353, peso:1)
-PesoAsignatura.create(cod_asig:10108, cod_carr:1353, peso:1)
-PesoAsignatura.create(cod_asig:10109, cod_carr:1353, peso:1)
+PesoAsignatura.create(cod_asig:10108, cod_carr:1353, peso:2)
+PesoAsignatura.create(cod_asig:10109, cod_carr:1353, peso:2)
 PesoAsignatura.create(cod_asig:10112, cod_carr:1353, peso:1)
 PesoAsignatura.create(cod_asig:10113, cod_carr:1353, peso:1)
 PesoAsignatura.create(cod_asig:10115, cod_carr:1353, peso:1)
@@ -140,4 +140,4 @@ PesoAsignatura.create(cod_asig:13281, cod_carr:1363, peso:2)
 PesoAsignatura.create(cod_asig:13282, cod_carr:1363, peso:1)
 PesoAsignatura.create(cod_asig:13283, cod_carr:1363, peso:1)
 PesoAsignatura.create(cod_asig:13284, cod_carr:1363, peso:0)
-PesoAsignatura.create(cod_asig:13285, cod_carr:1363, peso:0
+PesoAsignatura.create(cod_asig:13285, cod_carr:1363, peso:0)
